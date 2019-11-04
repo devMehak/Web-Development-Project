@@ -1,0 +1,119 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("rest2.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /*setting position for the welcome shit*/
+  position: relative;
+}
+
+.welcome{
+	position: absolute;
+	top: 20%;
+	left: 40%;
+}
+.welcome h2{
+	font-family: 'Yeon Sung', cursive;
+	color: white;
+	font-size: 70px;
+}
+.fiesta{
+    position: absolute;
+    top: 35%;
+    left: 41%;
+    width: 200px;
+    
+}
+.fiesta button{
+	width: 225px;
+	height: 70px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+    border-radius: 25px;
+}
+#hidden{
+	position: absolute;
+	top: 47%;
+	left: 42.5%;
+	width: 200px;
+}
+
+#hidden button{
+    width: 200px;
+	height: 70px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+    border-radius: 25px;
+}
+#hidden div{
+	padding-top: 10px;
+}
+
+#b1{
+	background-color: green;
+	color: white;
+}
+
+#b2{
+	background-color: orange;
+	color: white;
+}
+
+#b3{
+	background-color: red;
+	color: white;
+}
+
+#bookh1{
+	margin:50px;
+	margin-bottom: 40px;
+	font-family: 'Dancing Script', cursive;
+	font-size:60px;
+	color: red;
+}
+
+#bookh2{
+	font-family: 'Dancing Script', cursive;
+	font-size:40px;
+	color: blue;
+	margin-bottom: 30px;
+}
+
+#bookh3{
+	margin:50px;
+	margin-bottom: 40px;
+	font-family: 'Dancing Script', cursive;
+	font-size:60px;
+	color: red;
+}
+
+#bookh4{
+	margin:50px;
+	margin-bottom: 40px;
+	font-family: 'Dancing Script', cursive;
+	font-size:60px;
+	color: red;
+}
+
+#myform2, #myform{
+	background-color: #e8edea;
+}
+#menu{
+	width: 100%;
+}
+#menuTable img{
+	width: 100%;
+	height: 100%;
+}
