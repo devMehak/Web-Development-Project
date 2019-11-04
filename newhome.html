@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The President Hotel</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <style> 
+  .carousel-inner img {
+    width: 100%;
+  }
+  .carousel-inner{
+  	height: 50%;
+  }
+  #hori div{
+    text-align: center;
+    padding-top: 10px;
+    
+    background-color: #d9d9d2;
+    height: 70px;
+  }
+  #bookus{
+    border-right:1px solid ;
+  }
+  #under{
+  text-decoration: underline;
+  text-decoration-color: #ffd84d;
+}
+#pop img{
+  width: 100%;
+  height: 100%;
+}
+#pop div{
+  margin-bottom: 15px;
+  align-items: center;
+}
+/*.lefty img{
+  padding-left: 50px;
+}*/
+
+
+#pop img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#pop div:hover img{
+  opacity: 0.3;
+}
+
+#pop div:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #cfa346;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+ #hori2 div{
+    text-align: left;
+    padding-top: 10px;
+    background-color: #d9d9d2;
+    height: 180px;
+  }
+  .id2{
+    text-align: center;
+  }
+  #knowus{
+    width: 20%;
+  }
+  #knowus2{
+    width: 30%;
+  }
+  #knowus3{
+    width: 50%;
+  }
+</style>
+ 
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="newhome.html"><img src="P.png" width="50" height="30" class="d-inline-block align-top" alt="The President Hotel & Resorts"> The President Hotel & Resort
+  </a>
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+       <a class="nav-link" href="newhome.html">Home</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="resteraunt.html">Restaurant</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="movietheatre.html">Movie Theatre</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Dining</a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="#">Room Booking</a>
+      </li>
+      
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">About</a>
+          <a class="dropdown-item" href="#">Gallery</a>
+          <a class="dropdown-item" href="#">Gaming zone</a>
+          <a class="dropdown-item" href="#">Contact</a>
+        </div>
+      </li>
+    </ul>
+
+      <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Login<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign Up</a>
+      </li>
+
+
+    
+  </ul>
+
+  </div>
+</nav><!-- end of nav -->
+
+<!-- starting of slider -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="hotel1.jpg" alt="room" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Book Now!</h3>
+        <p>Book at best rates and enjoy the luxury </p>
+      </div>   
+    </div>
+     <div class="carousel-item">
+      <img src="hotel4.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>The President Hotel & Resort</h3>
+        <p>Share the great experience with us</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="hotel6.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Luscious Cuisine</h3>
+        <p>Where the food tastes as good as it looks</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="hotel3.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Festive Specials</h3>
+        <p>This festive season celebrate joy and purity with finest hospitality</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<br>
+<div class="row" id="hori">
+  <div class="col-sm" id="bookus"><h3 class="id1">Book Us</div>
+  <div class="col-sm">Best rates guaranteed</div>
+  <div class="col-sm">Pay at hotel</div>
+  <div class="col-sm">No hidden charges</div>
+  <div class="col-sm">Exclusive offers</div>
+  <div class="col-sm">Member reward points</div>
+<div class="col-sm">Free Wifi access</div>
+
+</div>
+<br><br>
+<h2 id="under"><b>Our Popular Hallmarks</b></h2>
+<br>
+<div class="row" id="pop">
+  <div class="col-md-4 lefty"><img src="pop1.jpg">
+    <div class="middle">
+      <div class="text">Private Pools</div>
+    </div>
+  </div>
+  <div class="col-md-4"><img src="pop2.jpg" >
+    <div class="middle">
+      <div class="text">Movie Theatre</div>
+    </div>
+  </div>
+  <div class="col-md-4"><img src="pop3.jpg" >
+    <div class="middle">
+      <div class="text">Spa and wellness</div>
+    </div>
+  </div>
+  <br>
+  <div class="col-md-4 lefty"><img src="pop4.jpg">
+    <div class="middle">
+      <div class="text">Gym</div>
+    </div>
+  </div>
+  <div class="col-md-4"><img src="pop5.jpg">
+     <div class="middle">
+      <div class="text">Restaurants and Cafeteria</div>
+    </div>
+  </div>
+  <div class="col-md-4"><img src="pop6.jpg">
+      <div class="middle">
+      <div class="text">In-Room Dining</div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row" id="hori2">
+  <div class="col" id="knowus"><img src="P.png" height="170" width="180"></div>
+  <div class="col-4" id="knowus2"><br><br><h4>The President Hotel & Resort</h4><h5>share the great experience with us</h5></div>
+  <div class="col-6" id="knowus3">It is the right choice for the visiters to experience luxurious interlude and spend some quality time with their loved ones.The hotel is situated in a charming yet peaceful location in the heart of Bollywood, Mumbai.It is a modern, elegant, 5-star hotel overlooking the sea. The services and facilities include 24/7 reception and room service, free access to wifi, baggage and laundry services, friendly staff, free breakfast buffet, private pool, gym, cafeteria, shopping plaza and more. We invite you to try world's most luxurious hotel. </div>
+
+</div></body>
+</html>

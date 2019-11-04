@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resteraunt</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="rescss.css">
+  <script type="text/javascript" src="res.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="newhome.html"><img src="P.png" width="50" height="30" class="d-inline-block align-top" alt="The President Hotel & Resorts"> The President Hotel & Resort
+  </a>
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+       <a class="nav-link" href="newhome.html">Home</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="resteraunt.html">Restaurant</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="movietheatre.html">Movie Theatre</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Dining</a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="#">Room Booking</a>
+      </li>
+      
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">About</a>
+          <a class="dropdown-item" href="#">Gallery</a>
+          <a class="dropdown-item" href="#">Gaming zone</a>
+          <a class="dropdown-item" href="#">Contact</a>
+        </div>
+      </li>
+    </ul>
+
+      <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Login<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign Up</a>
+      </li>
+
+
+    
+  </ul>
+
+  </div>
+</nav>
+<!-- that's the ending of nav -->
+
+<!-- this following line is for background image -->
+<div class = "bg">
+	<div class = "welcome">
+		<h2>Welcome!</h2>
+	</div>
+	<div class = "fiesta">
+		<button id = "show">Craving For a Meal?<i class="fas fa-pizza-slice"></i></button>
+	</div>
+	<div id = "hidden">
+		<div>
+			<a href="#bookh1"><button id = "b1">Book a seat</button></a>
+		</div>
+		<div>
+		<a href="#bookh3"><button id = "b2">TakeAway</button></a>
+		</div>
+		<div>
+			<button id = "b3">View Menu</button>
+		</div>
+	</div>
+</div>
+
+<h1 id = "bookh1">Come for Happiness! Stay for Memories!</h1>
+<h2 id = "bookh2">Seats Available - <span id = "seatCount">5</span></h2>
+<form class="needs-validation was-validated" id="myform">
+  <div class="form-group" ng-app = "">
+    <label for="uname">Username:</label>
+    <input type="text" class="form-control" id="usname" placeholder="Enter username" name="uname" ng-model = "firstname" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group" ng-app = "" >
+    <label for="email2" class="mb-2 mr-sm-2">Email:</label>
+    <input type="email" class="form-control mb-2 mr-sm-2" id="email2" placeholder="Enter email" name="email"ng-model = "eMail" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group" ng-app = "" >
+    <label for="uname">Phone Number:</label>
+    <input type="text" class="form-control" placeholder="Enter Phone Number" name="uname" id="phone" ng-model = "phoneNumber" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember" required> I agree on all terms and conditions.
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </label>
+  </div>
+  
+</form>
+<button class="btn btn-primary" onclick="c()">Submit</button>
+
+<!-- let's make menu  -->
+
+<h1 id = "bookh3">TakeAway For Tummy Full</h1>
+<form class="needs-validation was-validated" id="myform2">
+  <div class="form-group" ng-app = "">
+    <label for="uname">Username:</label>
+    <input type="text" class="form-control" id="usname2" placeholder="Enter username" name="uname" ng-model = "firstname" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group" ng-app = "" >
+    <label for="uname">Phone Number:</label>
+    <input type="text" class="form-control" placeholder="Enter Phone Number" name="uname" id="phone2" ng-model = "phoneNumber" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+</form>
+
+<button class="btn btn-primary" onclick="c()">Submit</button>
+<h1 id = "bookh4">Menu</h1>
+
+<div id = "menu">
+  <div class="row" id = "menuTable">
+    <div class="col-md-4"><img src="menu1.jpeg"></div>
+    <div class="col-md-4"><img src="menu2.jpg"></div>
+    <div class="col-md-4"><img src="menu3.jpg"></div>
+  </div>
+</div>
+
+</body>
+</html>
